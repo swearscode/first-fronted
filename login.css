@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3a6073, #3a6073);
+  }
+  
+  /* Container for Login Form */
+  .login-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Fade-in animation for the container */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Form Wrapper Styling */
+  .form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-wrapper p {
+    color: #dcdcdc;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Group Styling */
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group input:valid {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #3a6073;
+  }
+  
+  /* Floating Labels */
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #dcdcdc;
+    font-size: 1rem;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  /* Floating Effect */
+  .input-group input:focus ~ label,
+  .input-group input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #3a6073;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background: #3a6073;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-btn:hover {
+    background: #2b454f;
+    transform: translateY(-2px);
+  }
+  
+  /* Signup Link */
+  .signup-link {
+    color: #fff;
+    margin-top: 15px;
+  }
+  
+  .signup-link a {
+    color: #3a6073;
+    text-decoration: underline;
+  }
+  
+  .signup-link a:hover {
+    color: #dcdcdc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .login-container {
+      padding: 1.5rem;
+    }
+  
+    .form-wrapper h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

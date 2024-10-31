@@ -1,0 +1,72 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #3a6073, #3a6073);
+}
+
+/* Container Styling */
+.container {
+  text-align: center;
+  color: #fff; /* Changed text color for better contrast against olive green */
+  padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+/* Subheading */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #dcdcdc; /* Lightened subheading color for contrast */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Buttons Styling */
+.btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Sign Up Button */
+.signup {
+  background-color: #34ace0;
+  color: #fff;
+}
+
+.signup:hover {
+  background-color: #227093;
+}
+
+/* Login Button */
+.login {
+  background-color: #f8a5c2;
+  color: #fff;
+}
+
+.login:hover {
+  background-color: #e66767;
+}
